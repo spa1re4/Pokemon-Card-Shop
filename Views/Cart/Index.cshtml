@@ -1,0 +1,56 @@
+﻿@model List<PokemonCardShop.Models.CartItem>
+
+@{
+    ViewData["Title"] = "Корзина";
+    decimal total = Model.Sum(x => x.Price * x.Quantity);
+}
+
+<h1 class="mb-4">Корзина</h1>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-info">Корзина пуста</div>
+}
+else
+{
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Карта</th>
+                <th>Цена</th>
+                <th>Количество</th>
+                <th>Сумма</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>$@item.Price.ToString("0.00")</td>
+                    <td>@item.Quantity</td>
+                    <td>$@(item.Price* item.Quantity)</td>
+                    <td>
+                        <a asp-action="RemoveFromCart" asp-route-id="@item.PokemonCardId" class="btn btn-danger btn-sm">
+                            Удалить
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <h4>Итого: $@total.ToString("0.00")</h4>
+
+    @if (User.Identity != null && User.Identity.IsAuthenticated)
+    {
+        <a asp-action="Checkout" class="btn btn-success">Оформить заказ</a>
+    }
+    else
+    {
+        <a asp-controller="Account" asp-action="Login" class="btn btn-primary">
+            Войти для заказа
+        </a>
+    }
+}

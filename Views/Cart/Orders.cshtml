@@ -1,0 +1,40 @@
+﻿@model IEnumerable<PokemonCardShop.Models.Order>
+
+@{
+    ViewData["Title"] = "История заказов";
+}
+
+<h1 class="mb-4">История заказов</h1>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-info">Заказов пока нет</div>
+}
+else
+{
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Имя</th>
+                <th>Email</th>
+                <th>Адрес</th>
+                <th>Дата</th>
+                <th>Сумма</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var order in Model)
+            {
+                <tr>
+                    <td>@order.Id</td>
+                    <td>@order.CustomerName</td>
+                    <td>@order.Email</td>
+                    <td>@order.Address</td>
+                    <td>@order.OrderDate.ToLocalTime()</td>
+                    <td>$@order.TotalAmount.ToString("0.00")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

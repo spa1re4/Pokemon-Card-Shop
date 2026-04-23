@@ -1,0 +1,58 @@
+﻿@model PokemonCardShop.Models.PokemonCard
+
+@{
+    ViewData["Title"] = "Добавить карту";
+}
+
+<h1>Добавить карту</h1>
+
+<form asp-controller="PokemonCards" asp-action="Create" method="post">
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Series" class="form-label"></label>
+        <input asp-for="Series" class="form-control" />
+        <span asp-validation-for="Series" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Rarity" class="form-label"></label>
+        <input asp-for="Rarity" class="form-control" />
+        <span asp-validation-for="Rarity" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Price" class="form-label"></label>
+        <input asp-for="Price" class="form-control" />
+        <span asp-validation-for="Price" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="StockQuantity" class="form-label"></label>
+        <input asp-for="StockQuantity" class="form-control" />
+        <span asp-validation-for="StockQuantity" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="ImageUrl" class="form-label"></label>
+        <input asp-for="ImageUrl" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Description" class="form-label"></label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-success">Сохранить</button>
+    <a asp-controller="PokemonCards" asp-action="Index" class="btn btn-secondary">Назад</a>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

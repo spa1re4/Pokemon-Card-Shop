@@ -1,0 +1,130 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background: linear-gradient(135deg, #eef4ff 0%, #fdfbff 50%, #fff6e9 100%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(20, 30, 60, 0.65), rgba(20, 30, 60, 0.65)), url('https://images.pokemontcg.io/base1/4_hires.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 0 30px 30px;
+    margin-bottom: 30px;
+}
+
+.hero-overlay {
+    padding: 80px 20px;
+}
+
+.shop-card {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background-color: #ffffff;
+}
+
+    .shop-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    }
+
+.shop-image-wrap {
+    background: linear-gradient(180deg, #f8fbff 0%, #eef5ff 100%);
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shop-image {
+    max-height: 280px;
+    width: auto;
+    object-fit: contain;
+    padding: 12px;
+}
+
+.no-image {
+    height: 100%;
+    width: 100%;
+    color: #777;
+    font-size: 18px;
+    background: #f2f2f2;
+}
+
+.navbar {
+    background: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(8px);
+}
+
+footer {
+    background-color: transparent;
+}
+body {
+    margin-bottom: 60px;
+    background: linear-gradient(135deg, #eef4ff 0%, #fdfbff 50%, #fff6e9 100%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(20, 30, 60, 0.65), rgba(20, 30, 60, 0.65)), url('https://images.pokemontcg.io/base1/4_hires.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 0 30px 30px;
+    margin-bottom: 30px;
+}
+
+.hero-overlay {
+    padding: 80px 20px;
+}
+
+.shop-card {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background-color: #ffffff;
+}
+
+    .shop-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    }
+
+.shop-image-wrap {
+    background: linear-gradient(180deg, #f8fbff 0%, #eef5ff 100%);
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shop-image {
+    max-height: 280px;
+    width: auto;
+    object-fit: contain;
+    padding: 12px;
+}
+
+.no-image {
+    height: 100%;
+    width: 100%;
+    color: #777;
+    font-size: 18px;
+    background: #f2f2f2;
+}

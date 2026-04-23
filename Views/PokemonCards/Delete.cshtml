@@ -1,0 +1,32 @@
+﻿@model PokemonCardShop.Models.PokemonCard
+
+@{
+    ViewData["Title"] = "Удалить карту";
+}
+
+<h1>Удалить карту</h1>
+
+<h3>Ты точно хочешь удалить эту карту?</h3>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-3">Название</dt>
+        <dd class="col-sm-9">@Model.Name</dd>
+
+        <dt class="col-sm-3">Серия</dt>
+        <dd class="col-sm-9">@Model.Series</dd>
+
+        <dt class="col-sm-3">Редкость</dt>
+        <dd class="col-sm-9">@Model.Rarity</dd>
+
+        <dt class="col-sm-3">Цена</dt>
+        <dd class="col-sm-9">@Model.Price</dd>
+    </dl>
+
+    <form asp-action="Delete" method="post">
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" class="btn btn-danger">Удалить</button>
+        <a asp-action="Index" class="btn btn-secondary">Назад</a>
+    </form>
+</div>
