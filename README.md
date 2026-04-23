@@ -97,7 +97,6 @@ Default admin account:
 ---
 
 ##  Setup Instructions
-
 1. Clone the repository
 2. Configure PostgreSQL connection in `appsettings.json`
 3. Run migrations:
