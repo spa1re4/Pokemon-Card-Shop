@@ -6,7 +6,7 @@ This project is a web application of an online Pokémon card store developed usi
 
 The application allows users to browse products, add items to a shopping cart, and place orders. It also includes authentication and role-based access control for administrators.
 
----
+
 
 ##  Features
 
@@ -22,7 +22,7 @@ The application allows users to browse products, add items to a shopping cart, a
 - Delete products
 - View all orders
 
----
+
 
 ##  Technologies
 
@@ -33,7 +33,7 @@ The application allows users to browse products, add items to a shopping cart, a
 - ASP.NET Identity
 - Bootstrap
 
----
+
 
 ##  Architecture
 
@@ -43,7 +43,7 @@ The application follows the **MVC pattern**:
 - **View** — user interface
 - **Controller** — application logic
 
----
+
 
 ##  Database
 
@@ -58,7 +58,7 @@ Main tables:
 
 Entity Framework Core is used with migrations to manage the database.
 
----
+
 
 ##  Authentication
 
@@ -70,7 +70,7 @@ Roles:
 
 Default admin account:
 
----
+
 
 ##  Shopping Cart
 
@@ -78,7 +78,7 @@ Default admin account:
 - Stores temporary data before checkout
 - Calculates total price
 
----
+
 
 ##  Order Processing
 
@@ -86,7 +86,7 @@ Default admin account:
 - Orders are saved to the database
 - Each order contains multiple items
 
----
+
 
 ##  UI
 
@@ -94,7 +94,7 @@ Default admin account:
 - Custom styles in `site.css`
 - Responsive layout
 
----
+
 
 ##  Setup Instructions
 1. Clone the repository
