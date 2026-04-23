@@ -1,6 +1,6 @@
-# 🛒 Pokemon Card Shop (ASP.NET Core MVC)
+#  Pokemon Card Shop (ASP.NET Core MVC)
 
-## 📌 Description
+##  Description
 
 This project is a web application of an online Pokémon card store developed using **ASP.NET Core MVC** and **PostgreSQL**.
 
@@ -8,15 +8,15 @@ The application allows users to browse products, add items to a shopping cart, a
 
 ---
 
-## 🚀 Features
+##  Features
 
-### 👤 User
+###  User
 - Browse product catalog
 - View product details
 - Add products to cart
 - Place an order (only for authenticated users)
 
-### 👑 Admin
+###  Admin
 - Create new products
 - Edit products
 - Delete products
@@ -24,7 +24,7 @@ The application allows users to browse products, add items to a shopping cart, a
 
 ---
 
-## 🛠 Technologies
+##  Technologies
 
 - ASP.NET Core MVC
 - C#
@@ -35,7 +35,7 @@ The application allows users to browse products, add items to a shopping cart, a
 
 ---
 
-## 🧠 Architecture
+##  Architecture
 
 The application follows the **MVC pattern**:
 
@@ -45,7 +45,7 @@ The application follows the **MVC pattern**:
 
 ---
 
-## 🗄 Database
+##  Database
 
 Database: **PostgreSQL**
 
@@ -60,7 +60,7 @@ Entity Framework Core is used with migrations to manage the database.
 
 ---
 
-## 🔐 Authentication
+##  Authentication
 
 Authentication is implemented using **ASP.NET Identity**.
 
@@ -72,7 +72,7 @@ Default admin account:
 
 ---
 
-## 🧺 Shopping Cart
+##  Shopping Cart
 
 - Implemented using **Session**
 - Stores temporary data before checkout
@@ -80,7 +80,7 @@ Default admin account:
 
 ---
 
-## 💾 Order Processing
+##  Order Processing
 
 - Only authenticated users can place orders
 - Orders are saved to the database
@@ -88,7 +88,7 @@ Default admin account:
 
 ---
 
-## 🎨 UI
+##  UI
 
 - Built using Bootstrap
 - Custom styles in `site.css`
@@ -96,7 +96,7 @@ Default admin account:
 
 ---
 
-## ⚙️ Setup Instructions
+##  Setup Instructions
 
 1. Clone the repository
 2. Configure PostgreSQL connection in `appsettings.json`
